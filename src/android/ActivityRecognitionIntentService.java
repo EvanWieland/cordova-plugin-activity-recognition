@@ -15,22 +15,22 @@ public class ActivityRecognitionIntentService extends IntentService {
   private String ConvertActivityCodeToString(DetectedActivity Activity) {
     switch (Activity.getType()) {
       case DetectedActivity.IN_VEHICLE:
-        return "In Vechicle";
+        return "IN_VEHICLE";
       case DetectedActivity.ON_BICYCLE:
-        return "On Bicycle";
+        return "ON_BICYCLE";
       case DetectedActivity.ON_FOOT:
-        return "On Foot";
+        return "ON_FOOT";
       case DetectedActivity.RUNNING:
-        return "Running";
+        return "RUNNING";
       case DetectedActivity.STILL:
-        return "Still";
+        return "STILL";
       case DetectedActivity.TILTING:
-        return "Tilting";
+        return "TILTING";
       case DetectedActivity.WALKING:
-        return "Walking";
+        return "WALKING";
     }
 
-    return "Can Not Recognize";
+    return "UNKNOWN";
   }
 
   @Override
