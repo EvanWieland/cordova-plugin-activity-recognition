@@ -5,17 +5,17 @@ import org.json.JSONObject;
 
 public class ActivityRequestResult {
   public String ActivityType;
-  public int Propability;
+  public int Probability;
 
   public ActivityRequestResult() {
     ActivityType = "NoActivityYet";
-    Propability = 0;
+    Probability = 0;
   }
 
   public JSONObject GetJSONObject() throws JSONException {
     JSONObject result = new JSONObject();
     result.put("ActivityType", ActivityType);
-    result.put("Propability", Propability);
+    result.put("Probability", Probability);
     return result;
   }
 }
