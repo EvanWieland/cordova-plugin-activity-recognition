@@ -43,8 +43,8 @@ public class ActivityRecognitionPlugin extends CordovaPlugin
       this.Connect();
       return true;
     }
-    if (action.equals("Dissconnect")) {
-      this.Dissconnect();
+    if (action.equals("Disconnect")) {
+      this.Disconnect();
       return true;
     }
     if (action.equals("StartActivityUpdates")) {
@@ -100,7 +100,7 @@ public class ActivityRecognitionPlugin extends CordovaPlugin
     callback.error("Connection Failed !");
   }
 
-  private void Dissconnect() {
+  private void Disconnect() {
     if (mApiClient != null && mApiClient.isConnected()) {
       mApiClient.disconnect();
       callback.success();
