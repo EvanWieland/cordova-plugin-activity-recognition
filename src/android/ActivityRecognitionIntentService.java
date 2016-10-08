@@ -40,7 +40,7 @@ public class ActivityRecognitionIntentService extends IntentService {
       DetectedActivity CurrentActivity = result.getMostProbableActivity();
 
       Activity.ActivityType = ConvertActivityCodeToString(CurrentActivity);
-      Activity.Propability = CurrentActivity.getConfidence();
+      Activity.Probability = CurrentActivity.getConfidence();
     } else {
       Activity.ActivityType = "NoResult";
     }
