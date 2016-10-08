@@ -56,6 +56,10 @@ public class ActivityRecognitionPlugin extends CordovaPlugin
       this.StopActivityUpdates();
       return true;
     }
+    if (action.equals("Destroy")) {
+      this.onDestroy();
+      return true;
+    }
 
     return false;
   }

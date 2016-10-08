@@ -30,3 +30,9 @@ exports.StopActivityUpdates = function(
   // success() , error(ErrorMessage)
   exec(success, error, "ActivityRecognitionPlugin", "StopActivityUpdates", []);
 };
+
+exports.Destroy = function(
+    success, error) {
+  // success() , error(ErrorMessage)
+  exec(success, error, "ActivityRecognitionPlugin", "Destroy", []);
+};
