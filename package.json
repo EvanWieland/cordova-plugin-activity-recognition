@@ -1,5 +1,5 @@
 {
-  "name": "ActivityRecognition",
+  "name": "cordova-plugin-activity-recognition",
   "version": "1.0.0",
   "description": "Cordova plugin for using the ActivityRecognition API .",
   "cordova": {
