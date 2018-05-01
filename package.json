@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zapo93/cordova-plugin-activity-recognition.git"
+    "url": "https://github.com/Zapo93/cordova-plugin-activity-recognition"
   },
   "keywords": [
     "ecosystem:cordova",
